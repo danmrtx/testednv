@@ -1,6 +1,5 @@
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
-const avaliacoes = await db.collection('avaliacoes').find().limit(100).toArray();
 const express = require('express');
 const cors = require('cors');
 const { MongoClient, ObjectId } = require('mongodb');
